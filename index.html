@@ -1,0 +1,1313 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="isInViewport.min.js"></script>
+        <script src="script.js"></script>
+        <script
+            src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js"
+            defer>
+        </script>
+        <link rel="stylesheet" href="style.css">
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    </head>
+    <body>
+
+        <div id="startviddiv">
+          <img class="eclipse" id="introImage" src="color.jpeg">
+          <!-- <video id="video2" class="eclipse" stype="display:none;" muted="muted" playsinline="playsinline" autoplay> -->
+          <video id="video2" class="eclipse" style="display:none;" muted="muted" playsinline="playsinline" autoplay>
+              <source src="1iamdead/0iamdead_webC.mp4" type="video/mp4">
+              <!-- <source src="dummy.mp4" type="video/mp4"> -->
+          </video>
+        </div>
+<div class="hide-scroll">
+    <div class="viewport">
+        <div id="contents" >
+            <audio id="bgm" loop>
+                <source src="bgm.mp3" type="audio/mp3">
+            </audio>
+            <div class="topnav slider-out" id="slider">
+
+                <a href="javascript:void(0);" style="float:left;width:12%;" class="icon" id="soundIcon">
+                    <img class="bars" onclick="toggleSound()" id="soundBars" src="images/soundOff.png">
+                </a>
+
+                <p style="float:left;width:18%;height:5vw;padding:2vw;padding-top:3vw;margin:0;" class="menuText" id="menuTextp"><a class="menuText" onclick="toggleText(-1)" id="menuMinusa">-</a> Text <a class="menuText" onclick="toggleText(1)" id="menuPlusa">+</a></p>
+                <p style="float:left;width:18%;height:5vw;padding:2vw;padding-top:3vw;margin:0;" class="menuText" id="menuScrollp"><a class="menuText" onclick="toggleAutoScroll()" id="menuScrolla">Auto-scroll</a></p>
+                <p style="float:left;width:23%;height:5vw;padding:2vw;padding-top:3vw;margin:0;" class="menuText" id="menuScrollbarp"><a class="menuText" style="padding-top:0vw;" onclick="toggleScrollbar()" id="menuScrollbara">Scroll bar</a><img style="width:4vw;opacity:0.25;" id="menuScrollbarimg" src="eyeOpen.png"></p>
+
+                <p style="float:left;width:14%;height:5vw;padding-left:0vw;padding-bottom:3vw;padding-top:3vw;padding-right:0vw;margin:0;text-align:right;" class="menuText" id="menuSkipp"><a class="menuText" style="text-align:right;" onclick="videoHandler(1)" id="menuSkipa">Skip &gt;</a></p>
+                <!-- <a onclick="smallerText()" style="left:35%;" class="icon"><p class="menu">-</p></a> -->
+                <!-- <a onclick="smallerText()" style="left:55%;" class="icon"><p class="menu">Textttttttttttttttt</p></a> -->
+                <!-- <a href="javascript:void(0);" class="icon" id="soundIcon" onclick="toggleSound()"> -->
+                <!-- <img class="bars" id="soundBars" src="images/soundOff.png"> -->
+                <!-- </a> -->
+
+            </div>
+        </div>
+
+        <div style="display:none;" id="content2" class="content js-loop">
+
+            <img class="imageContent scrollIcon" style="max-width:5%;padding-top:0vw;margin-top:4vw;margin-right:2.5vw;" src="1iamdead/scroll.png">
+            <!-- <p class="textContent" style="margin-top:35vw;margin-bottom:500;">"I am dead!"</p> -->
+            <div class="chapter" id="1iamdead">
+
+            
+                 <p class="textContent"></p>
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:90vw;max-width:95%;padding-top:0vw;margin-top:1vw;"
+                    src="1iamdead/1ratgltf/1rat.gltf"
+                    ios-src="1iamdead/Untitled8.usdz"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    environment-image="4thebirth/bggradient.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">"I am dead!"</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/>
+                    ></model-viewer>
+                    <p class="textContent" style="margin-top:50vw;margin-bottom:50vw;">I thought I heard the voice of a rat.</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:50vw;">The rat was alive, <br/>but it looked as if it’s dead.</p>
+                    <p class="textContent" style="margin-top:200vw;margin-bottom:50vw;">1. “Do people live here?” I asked my mom the day I saw a rat in the basement.</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:50vw;">2. The white rat in the laboratory is a life simulation.</p>
+                    <p class="textContent" style="margin-top:80vw;margin-bottom:50vw;">3. Mouse is a mouse.</p>
+                    <p class="textContent" style="margin-top:80vw;margin-bottom:50vw;">4. Rat brings you water.</p>
+                    <p class="textContent" style="margin-top:130vw;margin-bottom:50vw;">A rat is semi-existant.</p>
+
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:70vw;max-width:95%;"
+                    src="1iamdead/0vw95z23z0qe/0vw95z23z0qe.gltf"
+                    ios-src="1iamdead/11.usdz"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    environment-image="4thebirth/bggradient.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">"Jjik!"</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/>
+                    ></model-viewer>
+                    
+                    
+                    <p class="textContent" style="margin-top:80vw;margin-bottom:70vw;">‘Jjik’ means squeak.</p>
+                    <p class="textContent" style="margin-top:30vw;margin-bottom:30vw;">There is a saying that goes ‘can’t say Jjik even if you are stepped on’</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:50vw;">Do those that live in basements know about the countless number of feet that are stepping on their heads?</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:50vw;">Do those doing the stepping know that there is someone beneath their feet?</p>
+                    
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:90vw;max-width:95%;"
+                    src="1iamdead/2/puwjx0m2ay95.gltf"
+                    ios-src="1iamdead/Untitled7.usdz"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    environment-image="4thebirth/bggradient.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">Data scraps from the lab.</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/>
+                    ></model-viewer>
+
+                    <p class="textContent" style="margin-top:50vw;margin-bottom:50vw;">Unrealistic perception and scattered memories present to me a mixture of reality and the virtual.</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:20vw;">The rat says: <br/>"In the human world, I lived to deal with the mistakes that humans dropped in the sewers."</p>
+             
+                    <model-viewer
+                    class="vrContent"
+                    style="width:50vw;height:100vw;max-width:95%;"
+                    src="1iamdead/4/pvow6y2vxwcn.gltf"
+                    ios-src="http://users.design.ucla.edu/~dasulkim92/longpl.usdz" 
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    environment-image="4thebirth/bggradient.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">Whoosh</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer>
+                    <p class="textContent" style="margin-top:30vw;margin-bottom:50vw;">"And now I am tasked with watching and caring for virtual beings in the wired world."</p>
+                    <p class="textContent" style="margin-top:200vw;margin-bottom:50vw;">I imagine the virtual beings living in an in-between space under the water.</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:50vw;">Our reflection in the undulating water look distorted because they are also ever so slightly reflected.</p>
+                    <p class="textContent" style="margin-top:200vw;margin-bottom:50vw;">I have seen the empty eyes of my avatar.</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:30vw;">They were the eyes of a laborer working like a machine.</p>
+            
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:90vw;max-width:95%;"
+                    src="1iamdead/rasply2/kmcxnud567id.gltf"
+                    ios-src="1iamdead/topdol2.usdz" 
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    environment-image="4thebirth/bggradient.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">That moment.</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer>
+                    <p class="textContent" style="padding-top:50vw;padding-bottom:50vw;"> I think about some stories <br/>again and again.</p>
+                    <p class="textContent" style="padding-top:50vw;padding-bottom:50vw;"> I am me. <br/> I am you. <br/> I am flat.</p>
+                    <p class="textContent" style="padding-top:50vw;padding-bottom:50vw;"> Then I sometimes disappear.</p>
+              
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:110vw;max-width:95%;"
+                    src="1iamdead/w6recy53vn42/w6recy53vn42.gltf"
+                    ios-src="1iamdead/breusdz.usdz"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">And merged.</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/>
+                    ></model-viewer>
+                    <p class="textContent"  style="padding-top:50vw;padding-bottom:0vw;">I repeat. <br/>The world repeats. <br/>And the stories that repeat repeats.</p>
+     
+                    <p class="textContent" style="padding-top:100vw;padding-bottom:100vw;"> Like a hamster in a hamster wheel.</p>
+                </div>
+
+
+
+                <div class="chapterpad"></div>
+
+
+
+                <div class="chapter" id="2faintglare">
+      
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:100vw;max-width:95%;"
+                    src="2faintglare/jc0idgmu8ocz/jc0idgmu8ocz.gltf"
+                    ios-src="2faintglare/budc.usdz"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">I see things.</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/>
+                    ></model-viewer>
+                    <p class="textContent" style="margin-top:50vw;margin-bottom:70vw;">Everything is in the middle <br/>and all are interconnected.</p>
+         
+                    <!-- <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:70vw;max-width:95%;"
+                    src="2faintglare/e1/ygrn7t59adpt.gltf"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient.jpg"
+                    auto-rotate
+                    ></model-viewer> -->
+                    <!-- <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:70vw;max-width:95%;"
+                    src="2faintglare/e2/9o2d7dnoh0f7.gltf"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient.jpg"
+                    auto-rotate
+                    ></model-viewer>
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:70vw;max-width:95%;"
+                    src="2faintglare/e3/xe002nlxzzuu.gltf"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient.jpg"
+                    auto-rotate
+                    ></model-viewer>
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:70vw;max-width:95%;"
+                    src="2faintglare/e4/5lkk01mri8p1.gltf"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient.jpg"
+                    auto-rotate
+                    ></model-viewer> -->
+                    <!-- <p class="textContent" style="margin-top:20vw;margin-bottom:30vw;">is in the middle</p> -->
+                    <!-- <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:70vw;max-width:95%;"
+                    src="2faintglare/e5/suly0ic8m98l.gltf"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient.jpg"
+                    auto-rotate
+                    ></model-viewer> -->
+                   <!--  <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:70vw;max-width:95%;"
+                    src="2faintglare/e6/g2mx82wwwfac.gltf"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient.jpg"
+                    auto-rotate
+                    ></model-viewer>
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:70vw;max-width:95%;"
+                    src="2faintglare/e7/vft4cus3f1bh.gltf"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient.jpg"
+                    auto-rotate
+                    ></model-viewer>
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:70vw;max-width:95%;"
+                    src="2faintglare/e8/12481p2wc1j8.gltf"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient.jpg"
+                    auto-rotate
+                    ></model-viewer> -->
+
+                    <!-- <p class="textContent" style="padding-top:30vw;padding-bottom:80vw;">and all are interconnected.</p> -->
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:90vw;max-width:95%;padding-bottom:72vw;"
+                    src="2faintglare/sat2/woi6fks14jes.gltf"
+                    ios-src="http://users.design.ucla.edu/~dasulkim92/sat.usdz.usdz" 
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">Bzzz</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer>
+         
+                </div>
+
+
+
+                <div class="chapterpad"></div>
+
+
+
+                <div class="chapter" id="3overture">
+        
+
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:100vw;max-width:95%;"
+                    src="3overture/gravip/5ufi3vo5u6tf.gltf"
+                    ios-src="3overture/1.usdz" 
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">Graveyard of screens.</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer>
+                    <p class="textContent" style="margin-top:10vw;margin-bottom:30vw;">I was in deep agony.</p>
+      
+                    <model-viewer
+                    class="vrContent"
+                    style="width:50vw;height:120vw;max-width:95%;"
+                    src="3overture/fep/91g4vhntxhmr.gltf"
+                    ios-src="3overture/3.usdz" 
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">Trudging along.</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer>
+                    <p class="textContent" style="margin-top:30vw;margin-bottom:80vw;">What is life?</p>
+                    <p class="textContent" style="margin-top:30vw;margin-bottom:30vw;">You don’t respond.</p>
+          
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:90vw;max-width:95%;"
+                    src="3overture/mask/g9n7q2h7sm7u.gltf"
+                    ios-src="3overture/mask.usdz"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">You stare into the camera.</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/>
+                    ></model-viewer>
+                    <p class="textContent" style="margin-top:10vw;margin-bottom:30vw;">But you know me.</br> Don’t you?</p>
+               
+                    <model-viewer
+                    class="vrContent"
+                    style="width:60vw;height:120vw;max-width:95%;"
+                    src="3overture/danp/so7x50z0w3iv.gltf"
+                    ios-src="3overture/4.usdz" 
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">I'm the best dancer.</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer>
+                    <!-- <p class="textContent" style="margin-bottom:10vw;">I’m the best dancer.</p> -->
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:50vw;">Dancing</br></br>Dancing</br></br>Dancing</p>
+                   
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:120vw;max-width:95%;"
+                    src="3overture/earp/om8zicxwz1x8.gltf"
+                    ios-src="3overture/5.usdz" 
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">I think this does sound kind of like magic.</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer>
+                    <!-- <p class="textContent">I think this does sound</br> kind of like magic.</p> -->
+                    <p class="textContent" style="margin-bottom:60vw;">I love maigc. <br/> I think it's beautiful.</p>
+                    <!-- <model-viewer
+                    class="vrContent"
+                    style="width:50vw;height:150vw;max-width:95%;"
+                    src="3overture/pom/xclj174nabzr.gltf"
+                    ios-src="3overture/6.usdz" 
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient.jpg"
+                    auto-rotate
+                    ar
+                    > -->
+                    <!-- <p class="textContent">I think it's beautiful.</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer> -->
+                    <p class="textContent" style="margin-top:50vw;margin-bottom:50vw;">So it’s a lie!</p>
+                    <model-viewer
+                    class="vrContent"
+                    style="width:50vw;height:100vw;max-width:95%;"
+                    src="3overture/cam/qyjo6jth6ryw.gltf"
+                    ios-src="http://users.design.ucla.edu/~dasulkim92/spider.usdz" 
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">Blank eyes<br/>Blank eyes</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer>
+           
+                    <!-- <p class="textContent" style="margin-top:30vw;margin-bottom:80vw;"> Blank eyes</br>
+                    Blank eyes</p> -->
+                    <p class="textContent" style="margin-top:50vw;margin-bottom:30vw;"> So you cannot stay with me.</p>
+                 
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:120vw;max-width:95%;"
+                    src="3overture/merp/g4h34df7v4lv.gltf"
+                    ios-src="3overture/8.usdz" 
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">I have no idea <br/>where I'm going.</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer>
+                    <!-- <p class="textContent">I have no idea where I’m going.</p> -->
+       
+                    <!-- <model-viewer
+                    class="vrContent"
+                    style="width:50vw;height:50vw;max-width:95%;"
+                    src="3overture/pr/3i3qfbxiksjc.gltf"
+                    ios-src="3overture/11.usdz" 
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient.jpg"
+                    auto-rotate
+                    ar
+                    ><input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer> -->
+                    <p class="textContent" style="margin-top:30vw;margin-bottom:30vw;">I’ll give you an idea of what you’re willing to get yourself killed for.</p>
+                    <!-- <p class="textContent" style="margin-top:70vw;margin-bottom:30vw;">I wondered if that might help you.</p> -->
+            
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:100vw;max-width:95%;"
+                    src="3overture/batp/f1t5authxhpj.gltf"
+                    ios-src="3overture/12.usdz" 
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">I wondered if that might help you.</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer>
+                    <p class="textContent" style="margin-top:30vw;margin-bottom:30vw;">You think this can happen to anyone?</p>
+                    <p class="textContent" style="margin-top:50vw;margin-bottom:50vw;">They belong to other people.</p>
+                    <p class="textContent" style="margin-top:80vw;margin-bottom:50vw;">Do you want them?</p>
+                    <model-viewer
+                    class="vrContent"
+                    style="width:50vw;height:100vw;max-width:95%;"
+                    src="3overture/hand/0gra1my44qeg.gltf"
+                    ios-src="3overture/13.usdz" 
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">I do.</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer>
+
+
+                    <p class="textContent" style="margin-top:80vw;margin-bottom:80vw;">Haven’t you been told to be happy?</p>
+                    <p class="textContent" style="margin-top:20vw;margin-bottom:50vw;">I have been told many times </br>to be happy.</p>
+                    <p class="textContent" style="margin-top:120vw;margin-bottom:50vw;">You...</p>
+                    <p class="textContent" style="padding-top:100vw;padding-bottom:80vw;">Blank eyes</br> Blank eyes</p>
+                </div>
+
+
+
+                <div class="chapterpad"></div>
+
+
+
+                <div class="chapter" id="4thebirth">
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:110vw;max-width:95%;"
+                    src="4thebirth/5evia4wcbb5v/5evia4wcbb5v.gltf"
+                    ios-src="4thebirth/theBirth.usdz"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">Oh, pitiful one.</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/>
+                    </model-viewer>
+                    
+                    <p class="textContent" style="padding-top:30vw;padding-bottom:100vw;">you were born.</p>
+                </div>
+
+
+                <div class="chapterpad"></div>
+
+
+
+                <div class="chapter" id="5theSmelloftheAir">
+                    <p class="textContent" style="padding-top:80vw;margin-bottom:50vw;">The smell of the air,<br/> the smell of rotting flesh.</p>
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:120vw;max-width:95%;"
+                    src="5theSmelloftheAir/h91fwxyg15o8/h91fwxyg15o8.gltf"
+                    ios-src="http://users.design.ucla.edu/~dasulkim92/chandelier.usdz"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient2.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">A blurry sight of life,<br/> a near-infinite world.</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer>
+                    <p class="textContent" style="margin-top:1vw;">Endless repetition, .</p>
+                    <img class="imageContent" style="padding-top:30vw;" src="5theSmelloftheAir/bl2.png">
+                    <p class="textContent" style="margin-top:20vw;margin-bottom:20vw;">Blink, </p>
+                    <img class="imageContent" style="padding-top:30vw;" src="5theSmelloftheAir/bl1.png">
+                    <p class="textContent" style="margin-top:20vw;margin-bottom:20vw;">Blink, </p>
+                    <img class="imageContent" style="padding-top:30vw;" src="5theSmelloftheAir/bl2.png">
+                    <p class="textContent" style="margin-top:20vw;margin-bottom:20vw;">Blink, </p>
+                    <img class="imageContent" style="padding-top:30vw;padding-bottom:30vw;" src="5theSmelloftheAir/bl1.png">
+                </div>
+
+
+                <div class="chapterpad"></div>
+
+
+
+                <div class="chapter" id="6aChild">
+                    
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:120vw;max-width:75%;"
+                    src="6aChild/newnewstar/8benkh9m83yk.gltf"
+                    ios-src="http://users.design.ucla.edu/~dasulkim92/star.usdz"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient2.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">I have very many names.</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer>
+                    <p class="textContent" style="margin-top:50vw;">I can propagate life, <br/>and I can read the sun and the moon, <br/>the day and night, and the time. </p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:20vw;">But why does it hurt so much? </p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:20vw;">Oh, you are here. </p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:20vw;">child… <br/><br/>child…  </p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:20vw;">who needs compassion…</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:20vw;">You are a guardian, </p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:20vw;">an angel,  </p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:20vw;">a prophet, </p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:20vw">a sphinx…</p>
+          
+                    <model-viewer
+                    class="vrContent"
+                    style="width:60vw;height:90vw;max-width:75%;"
+                    src="2snap/n2kpezw1ky9y.gltf"
+                    ios-src="http://users.design.ucla.edu/~dasulkim92/snake.usdz"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient2.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">Oh, you… </p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer>
+                    
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:20vw;">you are me! </p>
+                    <p class="textContent" style="padding-top:100vw;padding-bottom:80vw;">Please do tell,<br/>do tell your story.</p>
+                
+                </div>
+
+
+
+                <div class="chapterpad"></div>
+
+
+
+                <div class="chapter" id="7fromBeginningtoEnd">
+                  
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:120vw;max-width:75%;"
+                    src="2shorep/t8sgpcjyna4c.gltf"
+                    ios-src="http://users.design.ucla.edu/~dasulkim92/shore.usdz"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient2.jpg"
+                    auto-rotate
+                    ar
+                    ><p class="textContent">Remember the day<br/> when I came on shore.</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer>
+                    
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:100vw;">I was no longer cold <br/>and I could breathe.</p>
+                    <!-- <p class="textContent" style="margin-top:50vw;margin-bottom:30vw"> There was gentle breeze <br/>and the colors in reflected sunlight danced.</p> -->
+                   
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:130vw;max-width:75%;"
+                    src="7fromBeginningtoEnd/tree/j1u16rmxuag2.gltf"
+                    ios-src="http://users.design.ucla.edu/~dasulkim92/tree.usdz"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient2.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent"> There was gentle breeze <br/>and the colors in reflected sunlight danced.</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer>
+                    <p class="textContent" style="margin-top:50vw;margin-bottom:20vw;"> My heart flutters when I remember the things I no longer recall.</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:50vw;"> What could overflow my heart with joy </p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:50vw;"> more than remembering the day I die,  </p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:40vw;"> while coming to realize that</p>
+                 
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:100vw;max-width:75%;"
+                    src="7fromBeginningtoEnd/spiply/psorvau0aotz.gltf"
+                    ios-src="3overture/7.usdz"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient2.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent"> I could never die.</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer>
+                    <p class="textContent" style="margin-top:50vw;margin-bottom:50vw;"> Words I found today:<br/><br/>Least concern<br/>Danse Sacrale<br/>Nightview of Seoul<br/>D-2914320+1<br/>TAAT TABTH AIOYI ISTIA</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:50vw;"> Words to find tomorrow:<br/><br/>Something that tastes like chicken<br/>Artemis<br/>25 hours<br/>An accidental brain<br/>Not enough cloud</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:120vw;">Chuck said we will disappear if we cannot find a countermeasure.</p>
+                    
+                   
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:130vw;max-width:75%;"
+                    src="7fromBeginningtoEnd/lastap/40f56dja2noh.gltf"
+                    ios-src="1iamdead/Untitleds.usdz"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient2.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">At some time, the last star was born.</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer>
+                    <p class="textContent" style="margin-top:50vw;margin-bottom:120vw;">Other scenarios:<br/>Beginning-end</p>
+                    
+                 
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:100vw;max-width:75%;"
+                    src="7fromBeginningtoEnd/sunp/7zl21x7fkxms.gltf"
+                    ios-src="http://users.design.ucla.edu/~dasulkim92/sun.usdz"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient2.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">The sun falls.</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer>
+                    <p class="textContent" style="margin-top:20vw;margin-bottom:50vw;">Simply, we cannot find a home.</p>
+                    <p class="textContent" style="padding-top:100vw;padding-bottom:80vw;">I’m here and then I’m no longer here.</p>
+                   
+                </div>
+
+
+
+                <div class="chapterpad"></div>
+
+
+
+                <div class="chapter" id="8blankEyes">
+                    <p class="textContent" style="padding-top:50vw;padding-bottom:20vw;">After a few days I could create an Antarctic Silverfish.</p>
+                    <model-viewer
+                    class="vrContent"
+                    style="width:80vw;height:120vw;max-width:95%;"
+                    src="8blankEyes/lightp/x2ozc1rngx6g.gltf"
+                    ios-src="http://users.design.ucla.edu/~dasulkim92/light.usdz"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient2.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">The fish was born with light.</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer>
+                    <p class="textContent" style="margin-top:50vw;margin-bottom:100vw;">Oh, that was a great moment.</p>
+                    <p class="textContent" style="margin-top:50vw;margin-bottom:10vw;">The fish is here right now.</p>
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:120vw;max-width:95%;"
+                    src="8blankEyes/nufish/ff2eo58cvjic.gltf"
+                    ios-src="http://users.design.ucla.edu/~dasulkim92/fish.usdz"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient2.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">Flop. Flop. <br/>Wiggly squiggly fish.</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer>
+                    
+                    <p class="textContent" style="margin-top:70vw;margin-bottom:120vw;">Suddenly I heard her words <br/>in my head.</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:90vw;">“I long for you. <br/>As you long for your creator.”</p>
+                    <p class="textContent" style="margin-top:80vw;margin-bottom:50vw;">Her eyes looked as if it was looking for something but failed to find it.</p>
+                    <p class="textContent" style="margin-top:80vw;margin-bottom:50vw;">My eyes met hers, <br/>but she couldn’t see me.</p>
+                 <p class="textContent" style="margin-top:50vw;margin-bottom:20vw;">I watched with bated breath.</p>
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:110vw;max-width:95%;"
+                    src="8blankEyes/bop/x2p6cf7dqyoe.gltf"
+                    ios-src="http://users.design.ucla.edu/~dasulkim92/box.usdz"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient2.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">The infinite world, <br/>boxed in.</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer>
+                    
+                    <p class="textContent" style="padding-top:100vw;padding-bottom:80vw;">Just like a loner in the world.</p>
+                </div>
+
+
+
+                <div class="chapterpad"></div>
+
+
+
+                <div class="chapter" id="9thatBird">
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:120vw;max-width:95%;"
+                    src="9thatBird/gra/g1badm8qv2k9.gltf"
+                    ios-src="http://users.design.ucla.edu/~dasulkim92/gravestone.usdz"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient2.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">I erected a small gravestone.</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer>
+                    
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:50vw;">A place of memorial for the living.</p>
+                 
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:110vw;max-width:95%;"
+                    src="9thatBird/bon/mcm21ynm1ebo.gltf"
+                    ios-src="http://users.design.ucla.edu/~dasulkim92/alone.usdz"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient2.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">Alone outside a world.</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer>
+                    <p class="textContent" style="margin-top:40vw;margin-bottom:20vw;">Alone inside a world.</p>
+                    <p class="textContent" style="margin-top:150vw;margin-bottom:50vw;">When I was a child,<br/>I liked the bird toy that balanced <br/>on its break.</p>
+                    <p class="textContent" style="margin-top:80vw;margin-bottom:120vw;">I think I liked the feeling of touching together the center of weight, supporting each other.</p>
+                    <p class="textContent" style="margin-top:30vw;margin-bottom:50vw;">The feeling of holding hands together, tightly.</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:120vw;">When I feel like I’m barely held grounded by gravity, </p>
+                    
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:110vw;max-width:95%;"
+                    src="9thatBird/nubird/jxmw94mqdwtl.gltf"
+                    ios-src="http://users.design.ucla.edu/~dasulkim92/bird.usdz"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient2.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">I think to myself that<br/> I’m probably that bird.</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer>
+                    <p class="textContent" style="margin-top: 30vw;margin-bottom:20vw;">The bird’s backside is black <br/>and the stomach white.</p>
+                    <p class="textContent" style="margin-top:50vw;margin-bottom:50vw;">Finger, the color of apricot.</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:120vw;">Contact, connection - the color’s boundary blurs.</p>
+                    <p class="textContent" style="margin-top:30vw;margin-bottom:20vw;">Similar things cause confusion.</p>
+                    <p class="textContent" style="margin-top:150vw;margin-bottom:20vw;">There are things you can touch,<br/>and there are things that you feel as if you can touch. </p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:20vw;">All the possibilities that can exist in this world,</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:50vw;">They have all the colors.</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:20vw;">There are those who (that) are chosen.<br/>There are those who (that) are copied.<br/>There are those who (that) are appointed.<br/>There are those who (that) went there.<br/>There are those who (that) are still there.<br/>There are those who (that) exist at the same time.<br/>There are those who (that) just exists.</p>
+                    <p class="textContent" style="padding-top:150vw;padding-bottom:80vw;">More things come to exist and things no longer die.</p>
+                
+                </div>
+
+
+
+                <div class="chapterpad"></div>
+
+
+
+                <div class="chapter" id="10warmSnow">
+                    <p class="textContent" style="padding-top:50vw;padding-bottom:20vw;">The person I met today said, it was sad to see a kindergarten kid tapping a key card at the entrance of an apartment without a security guard, pressing the password and entering the building alone. </p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:20vw;">I thought of the sight I saw in the morning. </p>
+                    <p class="textContent" style="margin-top:100vw;">When I wore a VR headset,</p>
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:100vw;max-width:95%;"
+                    src="10warmSnow/snoman/ggb87cfp56lm.gltf"
+                    ios-src="http://users.design.ucla.edu/~dasulkim92/snowman.usdz"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient2.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">snow fell in the forest.</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer>
+                    <p class="textContent" style="margin-bottom:50vw;">I rather thought the snow was warm.</p>
+                 
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:150vw;max-width:95%;"
+                    src="10warmSnow/piap/ddgfifzh7iyt.gltf"
+                    ios-src="http://users.design.ucla.edu/~dasulkim92/piano.usdz"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient2.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">I like the episode where Chroniko’s mother sells her memory on how to play the piano.</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer>
+                    
+                    <p class="textContent" style="margin-top:50vw;margin-bottom:100vw;">The episode is very gloomy but I like it because I see hope is still there, just like how Tetsuro heads to Andromeda galaxy to get a machine body.</p>
+                    <p class="textContent" style="margin-top:60vw;margin-bottom:50vw;">It occurred to me.</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:50vw;">When that time comes, when we don’t care if everyone has a body or vice versa, when we can change our bodies…</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom: 30vw;">Do I become one of ‘them’? Or do they become a part of ‘us’? </p>
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:150vw;max-width:95%;"
+                    src="10warmSnow/unic/kp807jvr5wpy.gltf"
+                    ios-src="http://users.design.ucla.edu/~dasulkim92/unicorn.usdz"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient2.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">Do we all end up as one when I can choose to exist in a doll, in a child’s body, or in a computer? </p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer>
+                    
+                    <p class="textContent" style="margin-top:150vw;margin-bottom:50vw;">Whatever happens, at least everything we care about right now becomes pointless. </p>
+                    <p class="textContent" style="padding-top:120vw;padding-bottom:120vw;">It reminds me of the numerous clones of Maetel.</p>
+                  
+                </div>
+
+
+
+                <div class="chapterpad"></div>
+
+
+
+                <div class="chapter" id="11totheGreatbeyond">
+                    <p class="textContent" style="padding-top:50vw;padding-bottom:20vw;">They say it is blessed to know <br/>how to sleep, </p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:50vw;">but who can we be judged by when we worship immortality?</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:50vw;">Truthfully, who can we judged by?</p>
+                    <p class="textContent" style="margin-top:100vw;padding-bottom:80vw;">To the great beyond.</p>
+               
+                </div>
+
+
+
+                <div class="chapterpad"></div>
+
+
+
+                <div class="chapter" id="12aLetter">
+                    
+                    <model-viewer
+                     autoplay ar shadow-intensity="1" 
+                    class="vrContent"
+                    style="width:70vw;height:100vw;max-width:95%;"
+                    src="12aLetter/let/fm4zd847ez9s.gltf"
+                    ios-src="http://users.design.ucla.edu/~dasulkim92/letterinter.usdz"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient2.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">A letter has arrived.</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;padding-bottom:30vw;"/>
+              
+                    </model-viewer>
+                </div>
+
+
+
+                <div class="chapterpad"></div>
+
+
+
+                <div class="chapter" id="13littlePeace">
+                    <p class="textContent" style="padding-top:50vw;padding-bottom:30vw;">Only a half of me is happy. </p>
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:100vw;max-width:95%;"
+                    src="13littlePeace/hanp/9x1lpq3yd1lg.gltf"
+                    ios-src="http://users.design.ucla.edu/~dasulkim92/am.usdz"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient2.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">And my dream is ambidextrous.</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer>
+                    <p class="textContent" style="margin-top:50vw;margin-bottom:20vw;">I lost my left hand yesterday.</p>
+                    <p class="textContent" style="margin-top:50vw;margin-bottom:100vw;">And I lost my right hand today.</p>
+                  
+                    
+                    <p class="textContent" style="margin-bottom:120vw;">People with only one hand is always happy.</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:120vw;">The ground we stand is minutely different.</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:20vw;">The thrill of reaching another time, when my voice travel along a wire and connect.</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:20vw;">But it only comes as close as I can feel it, if it goes far, a different time, a different place, and all possible differences march in dissonance.</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:20vw;">I’m realizing now that 0.1 was actually a really big number.</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:20vw;">I knew a number that’s bigger, but it was rather like a little peace.</p>
+                    <p class="textContent" style="padding-top:100vw;padding-bottom:90vw;">Little peace.</p>
+                  
+                </div>
+
+
+
+
+                <div class="chapterpad"></div>
+
+
+
+
+
+                <div class="chapter" id="15selfPortraits">
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:100vw;max-width:95%;"
+                    src="15selfPortraits/ple/67dxvcqcpggl.gltf"
+                    ios-src="http://users.design.ucla.edu/~dasulkim92/palette.usdz"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient2.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">I will be a landscape painter.</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer>
+                    
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:20vw;">Sometimes, I will paint portraits.</p>
+                    <p class="textContent" style="padding-top:150vw;padding-bottom:120vw;">But, for some reason, I feel they all seem like self-portraits.</p>
+                 
+                </div>
+
+
+                <div class="chapterpad"></div>
+
+
+
+                <div class="chapter" id="16thePrivileged">
+                    <p class="textContent" style="padding-top:50vw;padding-bottom:20vw;">I thought I was looking at <br/>transparent beings.</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:20vw;">I thought they were looking at me.</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:20vw;">But they pass me by.</p>
+                    <p class="textContent" style="margin-top:130vw;margin-bottom:20vw;">How can I stroke you?<br/>How can I pat you?</p>
+                   
+                    <p class="textContent" style="margin-top:150vw;margin-bottom:20vw;">On one hand, I am jealous of you.</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:40vw;">Your eyes no longer look sad.</p>
+                    
+                <!-- </div> -->
+
+
+
+               
+                <!-- <div class="chapter" id="15selfPortraits"> -->
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:100vw;max-width:95%;"
+                    src="16thePrivileged/neuro/gsnpzphlrxmk.gltf"
+                    ios-src="http://users.design.ucla.edu/~dasulkim92/nur.usdz"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient2.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">Only sparkling eyes sense the sadness.</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer>
+                    <p class="textContent" style="margin-top:50vw;margin-bottom:80vw;">‘I don’t want to see what’s in front’,<br/> I say.</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:20vw;">‘___ _____ _____ ____ _____?’, I asked.</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:20vw;">I say nothing in response.</p>
+                    <p class="textContent" style="margin-top:150vw;margin-bottom:20vw;">This is a praise of life.<br/>Only the sparkling eyes can complain.</p>
+                    <p class="textContent" style="padding-top:100vw;padding-bottom:80vw;">The privileges of those who can taste the cold, the hot and the sour.</p>
+           
+                </div>
+
+
+
+                <div class="chapterpad"></div>
+
+
+
+                <div class="chapter" id="17aMillionRoses">
+                    <p class="textContent" style="padding-top:50vw;padding-bottom:20vw;">My goodness, </p>
+                    <p class="textContent" style="margin-top:80vw;margin-bottom:20vw;">When the day gets chilly,</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:40vw;">I am the cold blanket,<br/><br/>I am the cold wall,<br/><br/>I am the chilly air.</p>
+                 
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:130vw;max-width:95%;"
+                    src="17aMillionRoses/curp/5rux52iwoyak.gltf"
+                    ios-src="http://users.design.ucla.edu/~dasulkim92/curtains.usdz"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient2.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">For a moment,<br/> I watch myself pull the waving curtains aback.</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer>
+                    
+                    <p class="textContent" style="margin-top:50vw;margin-bottom:20vw;">All-of-a-sudden a second is much slower.</p>
+                    
+                   <model-viewer
+                   class="vrContent"
+                   style="width:70vw;height:150vw;max-width:95%;"
+                   src="17aMillionRoses/rosp/zojrurms00tp.gltf"
+                   ios-src="http://users.design.ucla.edu/~dasulkim92/rose.usdz"
+                   alt=""
+                   shadow-intensity="1"
+                   exposure=".7"
+                   
+                   environment-image="4thebirth/bggradient2.jpg"
+                   auto-rotate
+                   ar
+                   >
+                   <p class="textContent">O            nN                                 n nNNE...<br/>
+                       T       t t       TW                              Ooo,,,<br/>
+                   tTthhh R e. e.  Ee. E,...</p>
+                   <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer>
+                   <p class="textContent" style="margin-top:50vw;margin-bottom:20vw;">When I breathe, I feel an abrupt vertigo under falling warm water.</p>
+                   <p class="textContent" style="margin-top:100vw;margin-bottom:20vw;">One, breath is the grumble of life.</p>
+                   <p class="textContent" style="margin-top:80vw;margin-bottom:20vw;">Two, breath is the sound of goodbyes.</p>
+                   <p class="textContent" style="margin-top:80vw;margin-bottom:50vw;">Three, breath is the sound of me waking from a dream.</p>
+                   
+                  
+                   <model-viewer
+                   class="vrContent"
+                   style="width:60vw;height:100vw;max-width:95%;"
+                   src="2heap/es8rvhpapd8l.gltf"
+                   ios-src="http://users.design.ucla.edu/~dasulkim92/heart.usdz"
+                   alt=""
+                   shadow-intensity="1"
+                   exposure=".7"
+                   
+                   environment-image="4thebirth/bggradient2.jpg"
+                   auto-rotate
+                   ar
+                   >
+                   <p class="textContent">The vapor disperses and the sad heart beats slower.</p>
+                   <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer>
+                   <p class="textContent" style="margin-top:30vw;margin-bottom:50vw;">One,</p>
+                   <p class="textContent" style="margin-top:100vw;margin-bottom:50vw;">Two,</p>
+                   <p class="textContent" style="margin-top:100vw;margin-bottom:50vw;">Three,</p>
+                   <p class="textContent" style="margin-top:100vw;margin-bottom:80vw;">I sing.</p>
+                   <p class="textContent" style="padding-top:100vw;padding-bottom:80vw;">‘We are now one and we will go back to the everlasting star.’</p>
+           
+                </div>
+
+
+
+                <div class="chapterpad"></div>
+
+
+
+                <div class="chapter" id="18iamalive">
+                    <p class="textContent" style="padding-top:60vw;margin-bottom:20vw;">I think I am here now.</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:20vw;">Like a cup of milk,<br/> memory has been poured into me.</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:20vw;">I know its (my) name.<br/>I know what its (my) memory is like.<br/>I know how it (I) should behave.</p>
+              
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:120vw;max-width:95%;"
+                    src="18iamalive/doorply/5n1eiv3t5ghg.gltf"
+                    ios-src="http://users.design.ucla.edu/~dasulkim92/door.usdz"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient2.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">I walk out the door with a strange walk.</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer>
+                    
+                    <p class="textContent" style="margin-top:50vw;margin-bottom:20vw;">I am me, but where am I now?<br/> Where am I going?</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:20vw;">I float higher and higher.</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:50vw;">Everyone became smaller and smaller,<br/>as small as a dot and eventually they disappear.</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:20vw;">I didn’t hear them scolding me anymore, nor did I hear them quarrel.</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:20vw;">A wide unsettling silence.</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:20vw;">I drifted and drifted.</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:20vw;">I drifted as I became as dark as the color of all the night skies.</p>
+                  
+                    <model-viewer
+                    class="vrContent"
+                    style="width:70vw;height:100vw;max-width:95%;"
+                    src="18iamalive/flashply/bt81f9stqdmy.gltf"
+                    ios-src="http://users.design.ucla.edu/~dasulkim92/flash.usdz"
+                    alt=""
+                    shadow-intensity="1"
+                    exposure=".7"
+                    
+                    environment-image="4thebirth/bggradient2.jpg"
+                    auto-rotate
+                    ar
+                    >
+                    <p class="textContent">A ‘Bang’!<br/>A ‘Flash’!</p>
+                    <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/></model-viewer>
+                    
+                    <p class="textContent" style="margin-top:50vw;margin-bottom:20vw;">Didn’t I just come alive!</p>
+                    <p class="textContent" style="margin-top:150vw;margin-bottom:20vw;">A magical power squeezed out the hexadecimal rainbow colors onto a palette.</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:20vw;">And I painted the right colors as I have been taught.</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:20vw;">One problem is,</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:20vw;">I don’t know what to paint the transparent water.</p>
+                    <p class="textContent" style="margin-top:50vw;margin-bottom:20vw;">Ah, now that I think of it, I had similar difficulty with glass and mirrors</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:20vw;">My two choices are to paint something on it, or to not paint anything on it.</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:20vw;">I do not yet know how to make the object dance with the stream of water, or how to make the image in the reflection look unfamiliar.</p>
+                    <p class="textContent" style="margin-top:120vw;padding-bottom:90vw;">I await new memories.</p>
+                
+                </div>
+
+
+
+                <div class="chapterpad"></div>
+
+
+
+                <div class="chapter" id="19quizzes">
+             
+                    <p class="textContent" style="padding-top:50vw;margin-bottom:20vw;"> Guess what this is.</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:20vw;">Hints:<br/>Those growing in a crack<br/>Halfway between true and false<br/>Related to having empathy towards reproduction and regeneration<br/>Can be twisted into any shape<br/>It isn’t anything</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:20vw;">Similar phrases:<br/>The space beyond the glass<br/>Switching channels<br/>Dismembering a corpse<br/>A zero-gravity state<br/>Love</p>
+                    <p class="textContent" style="margin-top:100vw;padding-bottom:90vw;">Notice: <br/>The answer cannot be said in words.</p>
+                </div>
+
+
+<div class="chapterpad"></div>
+
+
+
+                <div class="chapterpad2">
+                    <p class="textContent" style="padding-top:50vw;margin-bottom:200vw;">Who's more pitiful?</p>
+                    <p class="textContent" style="margin-top:100vw;margin-bottom:200vw;">A human<br/>VS<br/>An animal</p>
+                    <p class="textContent" style="margin-top:200vw;margin-bottom:200vw;">A dog with an owner<br/>VS<br/>A stray cat</p>
+                    <p class="textContent" style="margin-top:200vw;margin-bottom:200vw;">A horse<br/>VS<br/>A car</p>
+                    <p class="textContent" style="margin-top:200vw;margin-bottom:200vw;">A worker<br/>VS<br/>A machine</p>
+                    <p class="textContent" style="margin-top:200vw;margin-bottom:200vw;">A housewife<br/>VS<br/>A fridge</p>
+                    <p class="textContent" style="margin-top:200vw;margin-bottom:200vw;">A baby<br/>VS<br/>An avatar in game</p>
+                    <p class="textContent" style="margin-top:200vw;margin-bottom:200vw;">An NPC<br/>VS<br/>A player</p>
+                    <p class="textContent" style="margin-top:200vw;margin-bottom:200vw;">One pixel<br/>VS<br/>Your life</p>
+                    <p class="textContent" style="margin-top:200vw;padding-bottom:100vw;">You</p>
+                    <p class="textContent" style="margin-top:200vw;padding-bottom:100vw;">or</p>
+                    <p class="textContent" style="margin-top:200vw;padding-bottom:100vw;">Me</p>
+                </div>
+
+
+
+                <div class="chapterpad3"></div>
+                <div class="chapterpad4"></div>
+
+                <div class="chapter is-clone">
+
+                  <img class="imageContent" style="display:none;max-width:5%;padding-top:0vw;margin-top:1vw;margin-right:1vw" src="1iamdead/scroll.png">
+                  <p class="textContent" style="margin-top:35vw;margin-bottom:500;">"I am dead!"</p>
+                  <div class="chapter" id="1iamdead">
+
+            
+                  <p class="textContent"></p>
+                      <model-viewer
+                      class="vrContent"
+                      style="width:70vw;height:70vw;max-width:95%;"
+                      src="1iamdead/1ratgltf/1rat.gltf"
+                      ios-src="1iamdead/Untitled8.usdz"
+                      alt=""
+                      shadow-intensity="1"
+                      exposure=".7"
+                      environment-image="4thebirth/bggradient.jpg"
+                      auto-rotate
+                      ar
+                      >
+                      <input type="image" src="vr.png" slot="ar-button" style="border: none; position: absolute; bottom:3vw;right:2vw;"/>
+                      ></model-viewer>
+                      <p class="textContent" style="margin-top:10vw;margin-bottom:50vw;">I thought I heard the voice of a rat.</p>
+                      <p class="textContent" style="margin-top:100vw;margin-bottom:50vw;">The rat was alive, <br/>but it looked as if it’s dead.</p>
+                      <p class="textContent" style="margin-top:200vw;margin-bottom:50vw;">1. “Do people live here?” I asked my mom the day I saw a rat in the basement.</p>
+                      <p class="textContent" style="margin-top:100vw;margin-bottom:50vw;">2. The white rat in the laboratory is a life simulation.</p>
+                      <p class="textContent" style="margin-top:80vw;margin-bottom:50vw;">3. Mouse is a mouse.</p>
+                      <p class="textContent" style="margin-top:80vw;margin-bottom:50vw;">4. Rat brings you water.</p>
+                      <p class="textContent" style="margin-top:130vw;margin-bottom:50vw;">A rat is semi-existant.</p>
+                </div>
+
+
+
+        </div>
+    </div>
+</div>
+
+
+    </body>
+</html>
