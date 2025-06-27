@@ -1,0 +1,357 @@
+body {
+    background-color : black;
+    margin: 0;
+    padding: 0;
+}
+
+.hide-scroll {
+    overflow: hidden;
+}
+
+.viewport {
+    overflow: auto;
+
+    /* Make sure the inner div is not larger than the container
+     * so that we have room to scroll.
+     */
+    max-height: 100%;
+
+    /* Default state: scrollbar visible */
+    margin-right: 0px; /* Changed from -100px */
+    padding-right: 0px; /* Changed from 100px */
+}
+
+/* Style the scrollbar to make it always visible (in supporting browsers) */
+.viewport::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 6px; /* Decreased width for a thinner scrollbar */
+}
+
+.viewport::-webkit-scrollbar-track {
+    background: transparent; /* Make the track transparent */
+}
+
+.viewport::-webkit-scrollbar-thumb {
+    border-radius: 6px; /* Adjusted radius */
+    background-color: rgba(255,255,255,.6); /* Slightly more opaque */
+    box-shadow: 0 0 1px rgba(255,255,255,.6);
+}
+
+
+.eclipse {
+    position: absolute;
+    background-color: black;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.topnav {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    /* position: block; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index:2;
+}
+
+.topnav #links {
+    display: none;
+    background-color: #22222288;
+    padding: 2vw;
+    padding-left: 4.3vw;
+    padding-top: 0vw;
+    padding-bottom: 50vw;
+    /* top:0; */
+    /* left: 0; */
+    z-index:2;
+}
+
+.topnav a.chapterTitle {
+    color: white;
+    font-family: 'Dosis-ExtraLight', Aerial, sans-serif;
+    padding: 1.9vw;
+    padding-left: 4.0vw;
+    text-decoration: none;
+    font-size: 1.5vh;
+    display: block;
+}
+
+.topnav .groupTitle{
+    color: white;
+    margin: 0;
+    font-family: 'Dosis-SemiBold', Aerial, sans-serif;
+    padding: 4.0vw;
+    padding-top: 1vw;
+    text-decoration: none;
+    font-size: 3.5vw;
+    display: block;
+}
+
+.topnav div.group{
+    padding: 1vh;
+}
+
+.topnav .icon {
+    /* display: block; */
+    float: left;
+    /* position: relative; */
+    /* left: 0; */
+    /* top: 0; */
+}
+
+/* .topnav .icon { */
+/*     display: inline; */
+/*     position: relative; */
+/*     left: 0; */
+/*     top: 0; */
+/* } */
+
+.topnav .icon img{
+    /* background-color: black; */
+    padding: 3vw;
+    padding-top: 5vw;
+    width:4vw;
+    height:4vw;
+}
+
+.next {
+    background: black;
+    display: block;
+    float: right;
+    clear: right;
+}
+
+.bars {
+    padding: 5vw;
+    height : 2vw;
+    width : 2vw;
+}
+
+#soundBars {
+    opacity: 25%;
+    padding: 3vw;
+    padding-left: 3.0vw;
+    height : 5vw;
+    width : 5vw;
+}
+
+.imageContent{
+    display: block;
+    max-height: 100%;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40vw;
+    padding-bottom: 40vw;
+    border: 0px;
+}
+.vrContent{
+    /* display: relative; */
+    display: block;
+    max-height: 100%;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40vw;
+    padding-bottom: 40vw;
+    border: 0px;
+    position: relative;
+}
+
+/* .vrContent::after {
+    content: "";
+    position: absolute;
+    top: 40vw;
+    right: 0;
+    bottom: 40vw;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 80vw);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    pointer-events: none;
+} */
+
+.textContent {
+    color: white;
+    font-family: 'Dosis-ExtraLight', Aerial, sans-serif;
+    text-align: center;
+    display: block;
+    max-height: 100%;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    font-size: 2.5vh;
+    border: 0px;
+}
+
+.chapter{
+    background-image: linear-gradient(black, #1a1a1a);
+}
+
+.chapterpad{
+    background-image: linear-gradient(#1a1a1a, black);
+    padding-top: 90vw;
+}
+
+.chapterpad2{
+    background-image: linear-gradient(black, #ffffff);
+    /*padding-top: 3000vw;*/
+    padding-bottom: 1000vw;
+}
+
+.chapterpad3{
+    background-image: linear-gradient(#ffffff, #ffffff);
+    /*padding-top: 3000vw;*/
+    padding-bottom: 9000;
+}
+
+.chapterpad4{
+    background-image: linear-gradient(#ffffff, black);
+    /*padding-top: 3000vw;*/
+    padding-top: 90000;
+}
+
+model-viewer{
+    --poster-color: #00000000;
+    z-index: 1;
+}
+
+#video2 {
+    z-index:2;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+    outline: none;
+}
+
+#slider{
+    /* position: absolute; */
+    /* width: 100px; */
+    /* height: 100px; */
+    /* width: fit-content; */
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+}
+
+.slide-in {
+    animation: slide-in 1.5s forwards;
+    -webkit-animation: slide-in 1.5s forwards;
+}
+
+.slide-out {
+    animation: slide-out 1.5s forwards;
+    -webkit-animation: slide-out 1.5s forwards;
+}
+
+#startviddiv {
+    min-height: 100%;
+    margin: 0;
+}
+
+@keyframes slide-in {
+    100% { transform: translateY(0%); }
+}
+
+@-webkit-keyframes slide-in {
+    100% { -webkit-transform: translateY(0%); }
+}
+
+@keyframes slide-out {
+    0% { transform: translateY(0%); }
+    100% { transform: translateY(-100%); }
+}
+
+@-webkit-keyframes slide-out {
+    0% { -webkit-transform: translateY(0%); }
+    100% { -webkit-transform: translateY(-100%); }
+}
+
+@font-face {
+    font-family: Dosis-ExtraLight;
+    src: url("fonts/Dosis-ExtraLight.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: Dosis-SemiBold;
+    src: url("fonts/Dosis-SemiBold.ttf") format('truetype');
+}
+
+.menuText{
+    color: #FFFFFF40;
+    font-family: 'Dosis-ExtraLight', Aerial, sans-serif;
+    font-size: 4.0vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    text-align: center;
+}
+
+.menu {
+    /* text-align: center; */
+    /* padding: 3vw; */
+    /* display: block; */
+    /* max-height: 100%; */
+    /* max-width: 70%; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* margin-top: 0; */
+    /* margin-bottom: 0; */
+    /* padding-top: 2vw; */
+    /* padding-bottom: 2vw; */
+    /* border: 0px; */
+}
+
+.fullmenu {
+    width: 100%;
+    background-color: green;
+}
+
+#contents {
+    display: inline;
+    width: 100%;
+}
+
+/* Removed invalid <style> tags */
+
+button{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: blue;
+    box-sizing: border-box;
+}
+
+button[slot="hotspot-hand"]{
+    --min-hotspot-opacity: 0;
+    background-color: red;
+}
+
+button[slot="hotspot-foot"]:not([data-visible]) {
+    background-color: transparent;
+    border: 3px solid blue;
+}
+
+#annotation{
+    background-color: #888888;
+    position: absolute;
+    transform: translate(10px, 10px);
+    border-radius: 10px;
+    padding: 10px;
+}
+/* This keeps child nodes hidden while the element loads */
+:not(:defined) > * {
+    display: none;
+}
